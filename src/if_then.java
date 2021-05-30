@@ -25,12 +25,6 @@ public class if_then {
         if((topScore >120) || (secondTopScore <= 90)){
             System.out.println("Either or both of the conditions are true");
         }
-
-        boolean isCar = true;
-        boolean wasCar = isCar ? true : false;
-        if(wasCar){
-            System.out.println("wasCar is true");
-        }
     }
 }
 
