@@ -26,6 +26,11 @@ public class if_then {
             System.out.println("Either or both of the conditions are true");
         }
 
+        boolean isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if(wasCar){
+            System.out.println("wasCar is true");
+        }
     }
 }
 
