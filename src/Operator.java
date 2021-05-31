@@ -8,10 +8,11 @@ import org.w3c.dom.ls.LSOutput;
  */
 public class Operator {
     public static void main(String[] args) {
-        double firtValue = 20.00d;
+        double firstValue = 20.00d;
         double secondValue = 80.00d;
-        double newNum = (firtValue + secondValue) * 100;
+        double newNum = (firstValue + secondValue) * 100.00d;
         double remainder = newNum % 40.00d;
+        System.out.println("The remainder = " + remainder);
         boolean myBoolValue = (remainder == 0) ? true : false;
         System.out.println(myBoolValue);
         if(!myBoolValue){
