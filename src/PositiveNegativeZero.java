@@ -6,12 +6,17 @@
  */
 public class PositiveNegativeZero {
 
+    public static void main(String[] args) {
+        checkNumber(25);
+        checkNumber(-12);
+    }
+
     public static void checkNumber(int number){
 
         if(number > 0){
-            System.out.println("positive");
+            System.out.println(number + " is positive number");
         } else if(number < 0){
-            System.out.println("negative");
+            System.out.println(number + " is negative number");
         }else{
             System.out.println("zero");
         }
