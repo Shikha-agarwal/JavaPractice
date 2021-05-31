@@ -43,6 +43,7 @@ public class Methods {
                     // OR
 
         int position = 4;
+
         if(playerScore >= 1000){
             position = 1;
         } else if(playerScore >= 500){

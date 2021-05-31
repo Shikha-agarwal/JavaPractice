@@ -17,10 +17,13 @@ public class CharAndBoolean {
 
         // boolean
         boolean myTrueBooleanValue = true;
+        System.out.println(myTrueBooleanValue);
+
         boolean myFalseBooleanValue = false;
+        System.out.println(myFalseBooleanValue);
 
         boolean isCustomerOverTwentyOne = true;
-
+        System.out.println(isCustomerOverTwentyOne);
     }
 }
 
