@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        SpeedConverter.printConversion(10.5);
+        SpeedConverter.printConversion(95.75);
         SpeedConverter.printConversion(-12.34);
     }
 }
