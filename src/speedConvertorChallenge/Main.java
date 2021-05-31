@@ -1,4 +1,4 @@
-package speedConvertor;
+package speedConvertorChallenge;
 
 /**
  * Created By: Shikha Agarwal
