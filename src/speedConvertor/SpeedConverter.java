@@ -1,3 +1,5 @@
+package speedConvertor;
+
 /**
  * Created By: Shikha Agarwal
  * Project Name: Java
@@ -5,12 +7,6 @@
  * Date: 31-05-2021
  */
 public class SpeedConverter {
-
-    public static void main(String[] args) {
-
-        printConversion(25.42);
-        printConversion(-12.43);
-    }
 
     public static long toMilesPerHour(double kilometersPerHour){
 
