@@ -8,19 +8,20 @@ public class Methods {
 
     public static void main(String[] args) {
 
-        displayHighScorePosition("Shikha", 2);
+        int highScorePosition = calculateHighScorePosition(1500);
+        displayHighScorePosition("Shikha", highScorePosition);
 
-        int score = calculateHighScorePosition(1500);
-        System.out.println(score);
+        highScorePosition = calculateHighScorePosition(1000);
+        displayHighScorePosition("Yash", highScorePosition);
 
-        score = calculateHighScorePosition(900);
-        System.out.println(score);
+        highScorePosition = calculateHighScorePosition(900);
+        displayHighScorePosition("Shina", highScorePosition);
 
-        score = calculateHighScorePosition(400);
-        System.out.println(score);
+        highScorePosition = calculateHighScorePosition(400);
+        displayHighScorePosition("Ravi", highScorePosition);
 
-        score = calculateHighScorePosition(50);
-        System.out.println(score);
+        highScorePosition = calculateHighScorePosition(50);
+        displayHighScorePosition("Harsh", highScorePosition);
     }
 
     public static void displayHighScorePosition(String playerName, int position) {
@@ -30,11 +31,11 @@ public class Methods {
 
     public static int calculateHighScorePosition(int playerScore) {
 
-        if (playerScore > 1000) {
+        if (playerScore >= 1000) {
             return 1;
-        } else if (playerScore > 500 && playerScore < 1000) {
+        } else if (playerScore >= 500) {
             return 2;
-        } else if (playerScore > 100 && playerScore < 500) {
+        } else if (playerScore >= 100) {
             return 3;
         }
         return 4;
