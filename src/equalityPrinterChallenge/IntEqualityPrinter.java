@@ -15,7 +15,7 @@ public class IntEqualityPrinter {
         } else {
             if((number1 == number2) && (number2 == number3)){
                 System.out.println("All numbers are equal");
-            } else if((number1 != number2) && (number2 != number3)){
+            } else if((number1 != number2) && (number2 != number3) && (number3 != number1)){
                 System.out.println("All numbers are different");
             } else {
                 System.out.println("Neither all are equal or different");

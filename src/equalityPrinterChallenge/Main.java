@@ -18,6 +18,8 @@ public class Main {
 
         IntEqualityPrinter.printEqual(1, 2, 3);
 
+        IntEqualityPrinter.printEqual(1, 2, 1);
+
     }
 }
 
