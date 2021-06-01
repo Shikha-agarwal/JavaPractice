@@ -4,7 +4,7 @@
  * Package Name: PACKAGE_NAME
  * Date: 01-06-2021
  */
-public class MethodChallenge {
+public class MethodOverloadingChallenge {
 
     public static void main(String[] args) {
 
