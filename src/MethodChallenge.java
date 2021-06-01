@@ -31,7 +31,7 @@ public class MethodChallenge {
         }
         double feet = inches / 12 ;
         double remaininginches = inches % 12;
-        return calcFeetAndInchesToCentimeters(feet ,remaininginches);
+        return calcFeetAndInchesToCentimeters(feet, remaininginches);
     }
 }
 
