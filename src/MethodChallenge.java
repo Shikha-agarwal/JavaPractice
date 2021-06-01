@@ -12,7 +12,7 @@ public class MethodChallenge {
         if (inCentimeters == -1) {
             System.out.println("Invalid value");
         } else {
-            System.out.println(inCentimeters + " cm");
+            System.out.println(inCentimeters + " cm ");
         }
     }
 
