@@ -8,11 +8,11 @@ public class SecondsAndMinutesChallenge {
 
     public static void main(String[] args) {
 
-        String myResult = getgetDurationString(3600);
-        System.out.println(myResult);
+        System.out.println(getgetDurationString(3600));
 
-        myResult = getDurationString(61, 0);
-        System.out.println(myResult);
+        System.out.println(getgetDurationString(3945));
+
+        System.out.println(getDurationString(61, 0));
     }
 
     public static String getDurationString(int minutes, int seconds) {
