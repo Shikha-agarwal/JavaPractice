@@ -17,36 +17,28 @@ public class SecondsAndMinutesChallenge {
 
     public static String getDurationString(int minutes, int seconds) {
 
-        String myValue = "";
-
         if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
-            myValue = "Invalid Value";
-        } else {
-            int numberOfHours = minutes / 60;
-            int remainingMinutes = minutes % 60;
-
-            if (numberOfHours < 10) {
-                String newNumberOfHours = "0" + numberOfHours + "h ";
-                myValue = myValue + newNumberOfHours;
-            } else {
-                myValue = myValue + numberOfHours + "h ";
-            }
-
-            if (remainingMinutes < 10) {
-                String newReamainingMinutes = "0" + remainingMinutes + "m ";
-                myValue = myValue + newReamainingMinutes;
-            } else {
-                myValue = myValue + remainingMinutes + "m ";
-            }
-
-            if (seconds < 10) {
-                String newSeconds = "0" + seconds + "s";
-                myValue = myValue + newSeconds;
-            } else {
-                myValue = myValue + seconds + "s";
-            }
+           return "Invalid Value";
         }
-        return myValue;
+
+        int numberOfHours = minutes / 60;
+        int remainingMinutes = minutes % 60;
+
+        String newNumberOfHours = numberOfHours + "h ";
+        if (numberOfHours < 10) {
+            newNumberOfHours = "0" + numberOfHours + "h ";
+        }
+
+        String newReamainingMinutes = remainingMinutes + "m ";
+        if (remainingMinutes < 10) {
+            newReamainingMinutes = "0" + remainingMinutes + "m ";
+        }
+
+        String newSeconds = seconds + "s";
+        if (seconds < 10) {
+            newSeconds = "0" + seconds + "s";
+        }
+        return newNumberOfHours + newReamainingMinutes + newSeconds;
     }
 
     public static String getgetDurationString(int seconds) {
