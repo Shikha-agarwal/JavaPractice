@@ -6,6 +6,8 @@
  */
 public class SecondsAndMinutesChallenge {
 
+    public static final String INVALID_VALUE_MESSAGE = "Invalid Value";                      // This is a final variable whose value cannot bt changed
+
     public static void main(String[] args) {
 
         System.out.println(getgetDurationString(3600));
@@ -18,7 +20,7 @@ public class SecondsAndMinutesChallenge {
     public static String getDurationString(int minutes, int seconds) {
 
         if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
-           return "Invalid Value";
+           return INVALID_VALUE_MESSAGE;
         }
 
         int numberOfHours = minutes / 60;
@@ -44,7 +46,7 @@ public class SecondsAndMinutesChallenge {
     public static String getgetDurationString(int seconds) {
 
         if (seconds < 0) {
-            return "Invalid Value";
+            return INVALID_VALUE_MESSAGE;
         }
         int minutes = seconds / 60;
         int remainingSeconds = seconds % 60;
