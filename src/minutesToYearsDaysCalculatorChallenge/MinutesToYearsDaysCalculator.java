@@ -11,10 +11,11 @@ public class MinutesToYearsDaysCalculator {
     public static void printYearsAndDays(long minutes) {
         if(minutes < 0){
             System.out.println("Invalid Value");
+        } else {
+            long numberOfYears = minutes / 525600;
+            long numberOfDays = (minutes % 525600) / 1440;
+            System.out.println(minutes + " min = " + numberOfYears + " y and " + numberOfDays +" d");
         }
-        long numberOfYears = minutes / 525600;
-        long numberOfDays = (minutes % 525600) / 1440;
-        System.out.println(minutes + " min = " + numberOfYears + " y and " + numberOfDays +" d");
     }
 }
 
