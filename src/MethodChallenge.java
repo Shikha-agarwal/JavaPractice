@@ -11,8 +11,6 @@ public class MethodChallenge {
         double inCentimeters = calcFeetAndInchesToCentimeters(72);
         if (inCentimeters == -1) {
             System.out.println("Invalid value");
-        } else {
-            System.out.println(inCentimeters + " cm ");
         }
     }
 
@@ -21,7 +19,9 @@ public class MethodChallenge {
         if((feet < 0) || (inches < 0) || (inches > 12)){
             return -1;
         }
-        return (feet * 12 * 2.54) + (inches * 2.54);
+        double centimeters = (feet * 12 * 2.54) + (inches * 2.54);
+        System.out.println(feet + " feet and " + inches + " inches = " + centimeters + " cm");
+        return centimeters;
     }
 
     public static double calcFeetAndInchesToCentimeters(double inches){
@@ -31,6 +31,7 @@ public class MethodChallenge {
         }
         double feet = inches / 12 ;
         double remaininginches = inches % 12;
+        System.out.println(inches + " inches = " + feet + " feet and " + remaininginches + " inches");
         return calcFeetAndInchesToCentimeters(feet, remaininginches);
     }
 }
