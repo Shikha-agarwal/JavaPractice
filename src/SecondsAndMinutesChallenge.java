@@ -11,47 +11,47 @@ public class SecondsAndMinutesChallenge {
         String myResult = getgetDurationString(3600);
         System.out.println(myResult);
 
-        myResult = getDurationString(61 , 0);
+        myResult = getDurationString(61, 0);
         System.out.println(myResult);
     }
 
-    public static String getDurationString(int minutes, int seconds){
+    public static String getDurationString(int minutes, int seconds) {
 
         String myValue = "";
 
-        if((minutes < 0) || (seconds < 0) || (seconds > 59)){
-            myValue =  "Invalid Value";
-        } else{
+        if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
+            myValue = "Invalid Value";
+        } else {
             int numberOfHours = minutes / 60;
             int remainingMinutes = minutes % 60;
 
-            if(numberOfHours < 10){
+            if (numberOfHours < 10) {
                 String newNumberOfHours = "0" + numberOfHours + "h ";
                 myValue = myValue + newNumberOfHours;
-            } else{
+            } else {
                 myValue = myValue + numberOfHours + "h ";
             }
 
-            if(remainingMinutes < 10){
+            if (remainingMinutes < 10) {
                 String newReamainingMinutes = "0" + remainingMinutes + "m ";
                 myValue = myValue + newReamainingMinutes;
-            } else{
+            } else {
                 myValue = myValue + remainingMinutes + "m ";
             }
 
-            if(seconds < 10){
+            if (seconds < 10) {
                 String newSeconds = "0" + seconds + "s";
                 myValue = myValue + newSeconds;
-            } else{
+            } else {
                 myValue = myValue + seconds + "s";
             }
         }
         return myValue;
     }
 
-    public static String getgetDurationString(int seconds){
+    public static String getgetDurationString(int seconds) {
 
-        if( seconds < 0){
+        if (seconds < 0) {
             return "Invalid Value";
         }
         int minutes = seconds / 60;
