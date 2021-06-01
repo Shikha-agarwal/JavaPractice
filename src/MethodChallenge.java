@@ -9,7 +9,11 @@ public class MethodChallenge {
     public static void main(String[] args) {
 
         double inCentimeters = calcFeetAndInchesToCentimeters(72);
-        System.out.println(inCentimeters + " cm");
+        if (inCentimeters == -1) {
+            System.out.println("Invalid value");
+        } else {
+            System.out.println(inCentimeters + " cm");
+        }
     }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches){
