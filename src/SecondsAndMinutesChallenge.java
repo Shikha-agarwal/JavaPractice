@@ -6,7 +6,7 @@
  */
 public class SecondsAndMinutesChallenge {
 
-    public static final String INVALID_VALUE_MESSAGE = "Invalid Value";                      // This is a final variable whose value cannot bt changed
+    public static final String INVALID_VALUE_MESSAGE = "Invalid Value";        // This is a final variable whose value cannot bt changed
 
     public static void main(String[] args) {
 
