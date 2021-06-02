@@ -13,10 +13,14 @@ public class ParseString {
         int number = Integer.parseInt(myStringValue);
         System.out.println("number = " + number);
 
-        myStringValue += 1;                 // 20201
-        number += 1;                        // 2020
-        System.out.println("numberAsString = " + myStringValue);
-        System.out.println("number = " + number);
+        myStringValue += 1;
+        number += 1;
+        System.out.println("numberAsString = " + myStringValue);            // 20201
+        System.out.println("number = " + number);                           // 2021
+
+        // converting String into double
+        double numberDouble = Double.parseDouble(myStringValue);
+        System.out.println("double number = " + numberDouble);
     }
 }
 
