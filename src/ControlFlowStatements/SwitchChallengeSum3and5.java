@@ -14,7 +14,7 @@ public class SwitchChallengeSum3and5 {
                 System.out.println(i);
                 sum = sum + i;
                 count = count + 1;
-                }
+            }
             if(count == 5){
                 break;
             }
