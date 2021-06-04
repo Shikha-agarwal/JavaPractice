@@ -6,7 +6,7 @@ package ControlFlowStatements;
  * Package Name: ControlFlowStatements
  * Date: 04-06-2021
  */
-public class IfChallengeGreatestCommonDivisor {
+public class ForChallengeGreatestCommonDivisor {
     public static void main(String[] args) {
         System.out.println(getGreatestCommonDivisor(25 ,15));
         System.out.println(getGreatestCommonDivisor(12, 30));
