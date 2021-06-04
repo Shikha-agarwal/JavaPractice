@@ -40,6 +40,9 @@ public class NumbersToWords {
         if(number < 0) {
             System.out.println("Invalid Value");
         }
+        if(number == 0) {
+            System.out.println("Zero");
+        }
         int revNumber = reverse(number);
         int originalReversedNum = revNumber;
         while(revNumber != 0){
