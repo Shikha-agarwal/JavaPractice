@@ -6,7 +6,7 @@ package ControlFlowStatements;
  * Package Name: ControlFlowStatements
  * Date: 04-06-2021
  */
-public class LargestPrimeFactor {
+public class ForChallengeLargestPrimeFactor {
     public static void main(String[] args) {
         System.out.println(getLargestPrime(21));
         System.out.println(getLargestPrime(217));
