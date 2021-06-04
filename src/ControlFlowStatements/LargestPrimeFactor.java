@@ -21,7 +21,7 @@ public class LargestPrimeFactor {
         }
         int largestPrime = 0;
         int j;
-        for(int i = 2; i < number; i++) {
+        for(int i = 2; i <= number; i++) {
             if(number % i == 0){
                 for( j = 2; j < i; j++){
                     if(i % j == 0){
