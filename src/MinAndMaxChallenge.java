@@ -13,6 +13,10 @@ public class MinAndMaxChallenge {
         int max = 0;
         boolean first = true;
 
+        // Instead of above three linnes we can write:
+        // int min = Integer.MAX_VALUE;
+        // int max = Integer.MIN_VALUE;
+
         while(true) {
             System.out.println("Enter number");
             boolean isAnInt = scanner.hasNextInt();
