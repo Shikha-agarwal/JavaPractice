@@ -12,7 +12,7 @@ public class ReadingUserInputChallenge {
 
         int sum = 0;
         int counter = 0;
-        while(true) {
+        while(counter < 10) {
             int i = counter + 1;
             System.out.println("Enter number #" + i + ":");
             boolean hasNextInt = scanner.hasNextInt();
@@ -24,12 +24,8 @@ public class ReadingUserInputChallenge {
             } else {
                 System.out.println("Invalid Value");
             }
-
-            if(counter ==  10) {
-                break;
-            }
+            scanner.nextLine();
         }
-        System.out.println("Number of valid values = " + counter);
         System.out.println("Sum = " + sum);
         scanner.close();
     }
